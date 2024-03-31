@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - Flow Profession</title>
+    <link rel="stylesheet" href="BaseWeb.css">
+    <style>
+        /* Estilos */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .artist {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+        }
+        .artist img {
+            width: 100px;
+            height: 100px;
+            margin-left: 20px;
+            border-radius: 5px;
+        }
+        .artist-info {
+            flex: 1;
+        }
+        .artist h2 {
+            color: #333;
+            margin-top: 0;
+        }
+        .artist p {
+            color: #666;
+            margin-bottom: 10px;
+        }
+        .song-list {
+            margin-top: 10px;
+        }
+        .song-list li {
+            margin-bottom: 5px;
+            list-style-type: none;
+        }
+    </style>
+    <style>
+        header img {
+            width: 150px;
+            height: auto; 
+            margin-bottom: 10px;
+        }
+        
+        #destacados img {
+            width: 100px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        #ultimos-lanzamientos img {
+            max-width: 100px;
+            height: auto;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <img src="Imagenes/logo2.png" alt="Flow Profession">
+    <nav>
+        <ul>
+            <li><a href="Inicio.html">Inicio</a></li>
+            <li><a href="CátalogoP.html">Catálogo</a></li>
+            <li><a href="ArtistasP.html">Artistas</a></li>
+            <li><a href="ContactoP.html">Contacto</a></li>
+            <li><a href="TuMusica.html">Manda Tú Música</a></li>
+        </ul>
+    </nav>
+</header>
+<header>
+    <h1>Flow Profession</h1>
+    <p>Catálogo de Artistas y Canciones</p>
+</header>
+
+<div class="container">
+    <div class="artist">
+        <div class="artist-info">
+            <h2>GioGad Beats</h2>
+            <p>Género: Reggaeton</p>
+            <div class="song-list">
+                <h3>Canciones Top:</h3>
+                <ul>
+                    <a href="https://www.youtube.com/watch?v=tbgiNsmpYgM&list=OLAK5uy_kFCYD678rNNRLBwZpWpL_fF-gY9M_yQ9U" target="_blank"><li>Postdoctorado</li></a>
+                    <li>Corazones Rotos</li>
+                    <li>No Es Una Movie Remix</li>
+                </ul>
+            </div>
+        </div>
+        <img src="Imagenes/Giogad On The Beat.jpg" alt="Artista 1">
+    </div>
+
+    <div class="artist">
+        <div class="artist-info">
+            <h2>Qba Mc</h2>
+            <p>Género: Reggaeton</p>
+            <div class="song-list">
+                <h3>Canciones Top:</h3>
+                <ul>
+                    <li>Hasta El Fin Del Mundo</li>
+                    <li>Por Mi Parte</li>
+                    <li>Pensado en Vos</li>
+                </ul>
+            </div>
+        </div>
+        <img src="Imagenes/qbamc.png" alt="Artista 2">
+    </div>
+
+</div>
+<footer>
+    <p>&copy; 2024 Flow Profession. Todos los derechos reservados.</p>
+</footer>
+</body>
+</html>

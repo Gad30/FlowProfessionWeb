@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artistas - Flow Profession</title>
+    <link rel="stylesheet" href="BaseWeb.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .artist-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .artist {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+        }
+        .artist img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+        .artist h2 {
+            color: #000;
+            margin: 0;
+        }
+        .artist p {
+            color: #666;
+            margin: 0;
+        }
+    </style>
+  <style>
+        header img {
+            width: 150px;
+            height: auto; 
+            margin-bottom: 10px;
+        }
+        
+        #destacados img {
+            width: 100px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        #ultimos-lanzamientos img {
+            max-width: 100px;
+            height: auto;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <img src="Imagenes/logo2.png" alt="Flow Profession">
+    <nav>
+        <ul>
+            <li><a href="Inicio.html">Inicio</a></li>
+            <li><a href="CátalogoP.html">Catálogo</a></li>
+            <li><a href="ArtistasP.html">Artistas</a></li>
+            <li><a href="ContactoP.html">Contacto</a></li>
+            <li><a href="TuMusica.html">Manda Tú Música</a></li>
+        </ul>
+    </nav>
+</header>
+<header>
+    <h1>Flow Profession</h1>
+    <p>Descubre a nuestros artistas destacados</p>
+</header>
+
+<div class="container">
+    <div class="artist-container">
+        <a href="artista1.html" class="artist">
+            <img src="artista1.jpg" alt="Artista 1">
+            <h2>GioGad Beats</h2>
+            <p>Género: Variado</p>
+        </a>
+
+        <a href="artista2.html" class="artist">
+            <img src="artista2.jpg" alt="Artista 2">
+            <h2>Artista 2</h2>
+            <p>Género: Variado</p>
+        </a>
+
+    </div>
+</div>
+<footer>
+    <p>&copy; 2024 Flow Profession. Todos los derechos reservados.</p>
+</footer>
+</body>
+</html>

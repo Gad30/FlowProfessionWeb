@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hazte Escuchar - Flow Profession</title>
+    <link rel="stylesheet" href="BaseWeb.css">
+    <link rel="stylesheet" href="MusicaBase.css">
+    <style>
+        /* Estilos para la nota */
+        .nota {
+            font-size: 1.8em; /* Reducir el tamaño de la fuente */
+            color: #666; /* Color de texto más suave */
+            margin-top: 5px; /* Pequeño margen superior */
+        }
+    </style>
+</head>
+<header>
+    <img src="Imagenes/logo2.png" alt="Flow Profession">
+    <nav>
+        <ul>
+            <li><a href="Inicio.html">Inicio</a></li>
+            <li><a href="CátalogoP.html">Catálogo</a></li>
+            <li><a href="ArtistasP.html">Artistas</a></li>
+            <li><a href="ContactoP.html">Contacto</a></li>
+            <li><a href="TuMusica.html">Manda Tú Música</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <h1>Hazte Escuchar</h1>
+  <form id="uploadForm" action="CancionSub.php" method="POST" enctype="multipart/form-data">
+    <label for="titulo">Título:</label><br>
+    <input type="text" id="titulo" name="titulo" required><br>
+    <label for="artista">Artista:</label><br>
+    <input type="text" id="artista" name="artista" required><br>
+    <label for="audio">Archivo de audio:</label><br>
+    <input type="file" id="audio" name="audio" accept="audio/*" required><br><br>
+    <label for="cover">Cover (imagen):</label><br>
+    <input type="file" id="cover" name="cover" accept="image/*" required><br><br>
+    <button type="submit">Subir Canción</button>
+</form>
+<center>
+ <p style="font-size: 0.8em; color: #666; margin-top: 5px;">¡Hazte escuchar! Sube tu canción favorita y compártela con el mundo. Asegúrate de que los archivos de audio estén en formato MP3, WAV o FLAC y las imágenes de portada en formato JPG o PNG, (Solo Aparecera 1 Por Semana, La "Mejor" canción que el Label Decida, ¡¡BUENA SUERTE!!.</p>
+ </center>
+    <footer>
+    <p>&copy; 2024 Flow Profession. Todos los derechos reservados.</p>
+</footer>
+</body>
+</html>

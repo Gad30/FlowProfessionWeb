@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles de la Canción</title>
+    <link rel="stylesheet" href="BaseWeb.css"> 
+    <style>
+        header img {
+            width: 150px;
+            height: auto; 
+            margin-bottom: 10px;
+        }
+
+        #audio-player {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        #audio-player audio {
+            width: 100%;
+        }
+
+        #timer {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <img src="Imagenes/logo2.png" alt="Flow Profession">
+    <nav>
+        <ul>
+            <li><a href="Inicio.html">Inicio</a></li>
+            <li><a href="CatalogoP.html">Catálogo</a></li>
+            <li><a href="ArtistasP.html">Artistas</a></li>
+            <li><a href="ContactoP.html">Contacto</a></li>
+            <li><a href="TuMusica.html">Manda Tú Música</a></li>
+        </ul>
+    </nav>
+</header>
+    <center>
+        <h1>Nombre de la Canción</h1>
+        <h2>Artista</h2>
+        <img src="cover.jpg" alt="Cover de la Canción">
+    </center>
+    <div id="audio-player">
+        <audio controls id="audio">
+            <source src="cancion.mp3" type="audio/mp3">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+        <span id="timer">0:00</span>
+    </div>
+
+    <script>
+        const audio = document.getElementById('audio');
+        const timer = document.getElementById('timer');
+
+        // Función para actualizar el cronómetro del audio
+        function updateTimer() {
+            const currentTime = audio.currentTime;
+            const minutes = Math.floor(currentTime / 60);
+            const seconds = Math.floor(currentTime % 60);
+            const formattedTime = minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
+            timer.textContent = formattedTime;
+        }
+
+        // Actualizar el cronómetro cada segundo
+        setInterval(updateTimer, 1000);
+    </script>
+    <footer>
+    <p>&copy; 2024 Flow Profession. Todos los derechos reservados.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Flow Profession</title>
+        <link rel="stylesheet" href="BaseWeb.css">
+    <style>
+        header img {
+            width: 150px;
+            height: auto; 
+            margin-bottom: 10px;
+        }
+        
+        #destacados img {
+            width: 100px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        #ultimos-lanzamientos img {
+            max-width: 100px;
+            height: auto;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+    </style>
+    <style>
+        /* Estilos */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .contact-section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .contact-section h2 {
+            color: #333;
+        }
+        .contact-info {
+            margin-top: 20px;
+        }
+        .contact-info p {
+            color: #666;
+            margin: 5px 0;
+        }
+        .contact-form {
+            margin-top: 20px;
+            text-align: left;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        .contact-form textarea {
+            height: 100px;
+        }
+        .contact-form input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form input[type="submit"]:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <img src="Imagenes/logo2.png" alt="Flow Profession">
+    <nav>
+        <ul>
+            <li><a href="Inicio.html">Inicio</a></li>
+            <li><a href="CátalogoP.html">Catálogo</a></li>
+            <li><a href="ArtistasP.html">Artistas</a></li>
+            <li><a href="ContactoP.html">Contacto</a></li>
+            <li><a href="TuMusica.html">Manda Tú Música</a></li>
+        </ul>
+    </nav>
+</header>
+<header>
+    <h1>Contacto</h1>
+    <p>¡Estamos aquí para ayudarte!</p>
+</header>
+
+<div class="container">
+    <div class="contact-section">
+        <h2>Información de contacto</h2>
+        <div class="contact-info">
+            <p>¡Contáctanos para cualquier consulta o pregunta!</p>
+            <p>Email: flowprofession@gmail.com</p>
+            <p>Teléfono: --- --- ----</p>
+            <p>Dirección: ------------</p>
+        </div>
+        <form class="contact-form" action="Conectar.php" method="post">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</div>
+<center>
+ <p style="font-size: 0.8em; color: #666; margin-top: 5px;">Si deseas entrar a nuestro label, manda tu propuesta de canción, llena el campo de arriba con nombre y apellido, tu Email donde recibiras nuestra respueta y tú mensaje, si te llega un Email por parte del equipo de Flow Profession, contesta ese correo con una canción tuya, se analizara y veremos si estas aprobado para entrar en el sello, en caso de que sea del agrado y no seas aprobado sera enviada en "Hazte Escuchar", ¡¡Buenas Suerte!!.</p>
+ </center>
+<footer>
+    <p>&copy; 2024 Flow Profession. Todos los derechos reservados.</p>
+</footer>
+</body>
+</html>
